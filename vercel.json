@@ -10,10 +10,10 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://yourproductionurl.com",
+        "APP_URL": "laravel-vue3-composition-6t1t4nerc-ayazjutt.vercel.app",
         "DB_CONNECTION": "sqlite",
         "DB_FOREIGN_KEYS": "true",
-        
+
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
