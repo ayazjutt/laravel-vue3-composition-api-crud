@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.section-p1 {
+    padding: 40px 60px;
+}
+
+.section-m1 {
+    margin: 40px 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.get-started{
+    text-align: center;
+}
+
+.get-started h3 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.get-started p{
+    font-size: 19px;
+}
+
+.gs-inner {
+    display: flex;
+    padding-top: 57px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gs-inner p {
+    margin: 0 20px;
+}
+
+.gs-discount {
+    background-color: #03c0b63d;
+    position: absolute;
+    margin: 16px 29px 0px 0px;
+    right: 42%;
+    top: -3px;
+    color: #03c0b6;
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #03c0b6;
+}
+
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.column{
+    box-shadow: 0 5px 15px rgb(0 0 0 / 6%);
+    width: 30%;
+    border-radius: 15px;
+    position: relative;
+}
+
+.price-table {
+    padding: 24px 30px;
+    height: 515px;
+}
+
+.price-table h4{
+    font-size: 25px;
+    padding: 5px 0;
+}
+
+.price-table .price_tag{
+    padding: 20px 0;
+}
+
+.price-table button {
+    /* padding: 15px 70px; */
+    cursor: pointer;
+    width: 100%;
+    height: 48px;
+    outline: none;
+    background-color: #15afef;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.price_tag .sign{
+    font-size: 60px;
+    color: gray;
+}
+
+.price_tag .currency{
+    font-size: 65px;
+    color: #000;
+}
+
+.price_tag .month{
+    font-size: 15px;
+    color: rgb(160, 160, 160);
+}
+
+.price-list{
+    padding: 25px 10px;
+}
+
+.column:nth-child(3) {
+    background-color: #03115e;
+}
+
+.column:nth-child(3) li,
+.column:nth-child(3) h4,
+.column:nth-child(3) p,
+.column:nth-child(3) .price_tag span{
+    color: #fff;
+}
+
+.price-table .price-list ul li {
+    background-image: url(../images/tick.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    list-style: none;
+    padding-left: 23px;
+    font-size: 14px;
+    margin: 21px 0;
+    background-size: 13px;
+}
+.popular{
+    background-color: #03c0b63d;
+    position: absolute;
+    margin: 16px 21px 0px 0px;
+    right: 0;
+    top: 0;
+    margin-left: 7px;
+    color: #03c0b6;
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.price-list ul li span {
+    background-color: #03c0b63d;
+    margin-left: 7px;
+    color: #03c0b6;
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.price-features {
+    padding: 14px 0px 18px 0px;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #efefef;
+}
+
+.column:nth-child(3) .price-features{
+    background-color: #222d6a;
+}
+
+.column:nth-child(3) .price-table button{
+    background-color: #03c0b6;
+}
+
+.overview {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.overview td,
+.overview th {
+    padding: 8px;
+}
+
+.overview tr:nth-child(even){background-color: #f2f2f2;}
+
+.overview th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: right;
+}
+
+.overview:nth-child(1) th{
+    text-align: left;
+}
+.overview img{
+    width: 15px;
+}
+
+.center{
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1600px){
+
+    .gs-discount {
+        margin: 15px 33px 0px 0px;
+        right: 40%;
+    }
+}
+@media (max-width: 1440px){
+
+    .container {
+        max-width: 85%;
+    }
+    .gs-discount {
+        right: 39%;
+    }
+}
+@media (max-width: 1366px){
+
+    .price-table .price-list ul li {
+        font-size: 12px;
+    }
+    .price-table button {
+
+        width: 237px;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .gs-discount {
+        right: 38%;
+    }
+}
+
+@media (max-width: 820px){
+    .gs-discount {
+        right: 35%;
+        top: -2px;
+    }
+    .price-list {
+        padding: 25px 0px;
+    }
+    .price-table .price-list ul li {
+        font-size: 11px;
+    }
+    .price_tag .currency,
+    .price_tag .sign {
+        font-size: 45px;
+    }
+    .price-table button {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .section-p1 {
+        padding: 40px 2px;
+    }
+    .price-table {
+        padding: 24px 20px;
+
+    }
+}
+
+@media(max-width:477px){
+    .section-p1{
+        padding: 20px;
+    }
+    .container{
+        display: block;
+    }
+    .column {
+        width: 100%;
+        margin: 40px 0;
+    }
+    .price-table {
+        padding: 35px;
+        height: 460px;
+    }
+    .price-table button {
+        width: 230px;
+        height: 45px;
+        font-size: 12px;
+    }
+    .gs-discount {
+        right: 11%;
+        top: -2px;
+    }
+    .get-started h3 {
+        font-size: 35px;
+    }
+}
